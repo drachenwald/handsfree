@@ -20,6 +20,8 @@ function App() {
     'localhost': 'Glen Rathlin',
     '127.0.0.1': 'Harpelstane',
     'handsfree.pages.dev': 'Glen Rathlin',
+    'gr.annawilson.eu': 'Glen Rathlin',
+    'harpelstane.annawilson.eu': 'Harpelstane',
   }
 
   const [ officerlist, setOfficerlist ] = useState([])
