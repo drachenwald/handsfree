@@ -1,14 +1,15 @@
 {
 
   "domains": {
-    "localhost": "Depedene under Wychwood",
+    "localhost": "West Dragonshire",
     "127.0.0.1": "Harpelstane",
     "handsfree.pages.dev": "Glen Rathlin",
     "gr.annawilson.eu": "Glen Rathlin",
     "harpelstane.annawilson.eu": "Harpelstane",
     "dim.annawilson.eu": "Dun in Mara",
     "depedene.annawilson.eu": "Depedene under Wychwood",
-    "pontalarch.annawilson.eu": "Pontalarch"
+    "pontalarch.annawilson.eu": "Pontalarch",
+    "wd.annawilson.eu": "West Dragonshire"
   },
 
   "officerurl": "https://scripts.drachenwald.sca.org/json/regnum-officers-box.json",
