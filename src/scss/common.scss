@@ -1,0 +1,45 @@
+////////////////////////////
+
+$philosopher: 'Philosopher', serif;
+$open-sans: 'Open Sans', sans-serif;
+
+$font-family-sans-serif:      $open-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:            $font-family-sans-serif !default;
+$headings-font-family:        $philosopher !default;
+
+.navbar {
+  font-family: $philosopher;
+}
+
+$body-bg: #eeeeee;
+$white: #ffffff;
+
+$navbar-dark-color:                 rgba($white, 1) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+
+.banner {
+  background-image: url('/img/default-banner.jpg');
+  background-color: rgba(0,0,0,0.1);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff; 
+  text-shadow: 2px 2px #000;
+  // height: 300px;
+
+  a.btn:hover {
+    text-shadow: none;
+  }
+}
+
+svg {
+  width: 1.5rem;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
