@@ -19,7 +19,7 @@ function App() {
   const domains = {
     'localhost': 'Glen Rathlin',
     '127.0.0.1': 'Harpelstane',
-    'handsfree.pages.dev': 'Dun in Mara',
+    'handsfree.pages.dev': 'Glen Rathlin',
   }
 
   const [ officerlist, setOfficerlist ] = useState([])
