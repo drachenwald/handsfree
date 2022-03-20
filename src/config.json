@@ -1,0 +1,15 @@
+{
+
+  "domains": {
+    "localhost": "Glen Rathlin",
+    "127.0.0.1": "Harpelstane",
+    "handsfree.pages.dev": "Glen Rathlin",
+    "gr.annawilson.eu": "Glen Rathlin",
+    "harpelstane.annawilson.eu": "Harpelstane"
+  },
+
+  "officerurl": "https://scripts.drachenwald.sca.org/json/regnum-officers-box.json",
+  "groupurl": "https://scripts.drachenwald.sca.org/json/regnum-groups.json",
+  "eventsurl": "https://scripts.drachenwald.sca.org/json/calendar.json"
+
+}

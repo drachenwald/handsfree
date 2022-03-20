@@ -10,26 +10,16 @@ import Contact from './Contact'
 import Loading from './Loading'
 import NotFound from './NotFound'
 
+import config from '../config.json'
+
 function App() {
-
-  const officerurl = 'https://scripts.drachenwald.sca.org/json/regnum-officers-box.json'
-  const groupurl = 'https://scripts.drachenwald.sca.org/json/regnum-groups.json'
-  const eventsurl = 'https://scripts.drachenwald.sca.org/json/calendar.json'
-
-  const domains = {
-    'localhost': 'Glen Rathlin',
-    '127.0.0.1': 'Harpelstane',
-    'handsfree.pages.dev': 'Glen Rathlin',
-    'gr.annawilson.eu': 'Glen Rathlin',
-    'harpelstane.annawilson.eu': 'Harpelstane',
-  }
 
   const [ officerlist, setOfficerlist ] = useState([])
   const [ grouplist, setGrouplist ] = useState([])
   const [ eventslist, setEventslist ] = useState([])
 
   useEffect( () => {
-    fetch(officerurl)
+    fetch(config.officerurl)
       .then(response => response.json())
       .then(data => {
         setOfficerlist(data)
@@ -38,7 +28,7 @@ function App() {
   }, []);
 
   useEffect( () => {
-    fetch(groupurl)
+    fetch(config.groupurl)
       .then(response => response.json())
       .then(data => {
         setGrouplist(data)
@@ -47,7 +37,7 @@ function App() {
   }, []);
 
   useEffect( () => {
-    fetch(eventsurl)
+    fetch(config.eventsurl)
       .then(response => response.json())
       .then(data => {
         setEventslist(data)
@@ -75,7 +65,7 @@ function App() {
 
 
   const groupdetails = grouplist.find( obj => {
-    return obj.group === domains[window.location.hostname]
+    return obj.group === config.domains[window.location.hostname]
   })
 
   if ( officerlist && grouplist && groupdetails ) {
