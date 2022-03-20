@@ -33,9 +33,17 @@ const About = (props) => {
             time appropriate clothes, accessories, weapons, household goods and skill sets.
           </p>
 
-          <LinkContainer to="/">
-            <Button>Go to home page</Button>
-          </LinkContainer>
+          <p>
+            <Button href="https://insulaedraconis.org/activities/">
+              Read more on our UK/Ireland/Iceland site
+            </Button>
+          </p>
+          
+          <p>
+            <LinkContainer to="/">
+              <Button variant="outline-primary">Go to home page</Button>
+            </LinkContainer>
+          </p>
         </Col>
         <Col xs={12} md={4}>
           <br />
