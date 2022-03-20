@@ -57,7 +57,7 @@ const Home = (props) => {
               <Card.Text>
                 Get in touch.
               </Card.Text>
-              <LinkContainer to="/contacts" className="stretched-link">
+              <LinkContainer to="/contact" className="stretched-link">
                 <Button variant="primary"><b>Read more...</b></Button>
               </LinkContainer>
             </Card.Body>
