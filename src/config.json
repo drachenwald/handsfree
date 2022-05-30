@@ -1,6 +1,9 @@
 {
 
   "domains": {
+    "glenrathlin.org": "Glen Rathlin",
+    "www.glenrathlin.org": "Glen Rathlin",
+    
     "localhost": "West Dragonshire",
     "127.0.0.1": "Harpelstane",
     "handsfree.pages.dev": "Glen Rathlin",
