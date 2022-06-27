@@ -3,10 +3,12 @@
   "domains": {
     "glenrathlin.org": "Glen Rathlin",
     "www.glenrathlin.org": "Glen Rathlin",
+    "klakavirki.org": "Klakavirki",
+    "www.klakavirki.org": "Klakavirki",
     
-    "localhost": "Dun in Mara",
+    "localhost": "Klakavirki",
     "127.0.0.1": "Dun in Mara",
-    "handsfree.pages.dev": "Dun in Mara"
+    "handsfree.pages.dev": "Klakavirki"
   },
 
   "officerurl": "https://scripts.drachenwald.sca.org/json/regnum-officers-box.json",
