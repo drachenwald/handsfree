@@ -76,7 +76,7 @@ const Contact = (props) => {
 
     return (
 
-      <div key={officer.slug}>
+      <div key={officer.office}>
         <h3>{ role.title }</h3>
 
         <p>

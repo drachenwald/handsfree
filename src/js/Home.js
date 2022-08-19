@@ -34,7 +34,7 @@ const Home = (props) => {
                 About {props.group.group}.
               </Card.Text>
               <LinkContainer to="/about" className="stretched-link">
-                <Button variant="primary"><b>Read more...</b></Button>
+                <Button variant="primary"><b>What we do...</b></Button>
               </LinkContainer>
             </Card.Body>
           </Card>
@@ -46,7 +46,7 @@ const Home = (props) => {
                 Events taking place in our group.
               </Card.Text>
               <LinkContainer to="/events" className="stretched-link">
-                <Button variant="primary"><b>Read more...</b></Button>
+                <Button variant="primary"><b>See our events...</b></Button>
               </LinkContainer>
             </Card.Body>
           </Card>
@@ -58,7 +58,7 @@ const Home = (props) => {
                 Get in touch.
               </Card.Text>
               <LinkContainer to="/contact" className="stretched-link">
-                <Button variant="primary"><b>Read more...</b></Button>
+                <Button variant="primary"><b>Who we are...</b></Button>
               </LinkContainer>
             </Card.Body>
           </Card>

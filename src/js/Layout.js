@@ -55,14 +55,15 @@ const Layout = (props) => {
 
       <div className="banner">
         <Container>
-          <h1 className="display-5 pt-5">{ props.title }</h1>
           { props.subtitle
             ?
-              <h3>{ props.subtitle }</h3>
+              <>
+                <h1 className="display-5 pt-5">{ props.title }</h1>
+                <h3 className="pb-5">{ props.subtitle }</h3>
+              </>
             :
-              null
+              <h1 className="display-5 pt-5 pb-5">{ props.title }</h1>
           }
-          <h1 className="pb-1">&nbsp;</h1>
         </Container>
       </div>
 
