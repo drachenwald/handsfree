@@ -27,38 +27,38 @@ const Home = (props) => {
 
         <CardGroup>
           <Card>
-            <Card.Img variant="top" src={helmet} />
+            <Card.Img variant="top" src={helmet} alt="A fighter in his shining helmet"/>
             <Card.Body>
               <Card.Title>About</Card.Title>
               <Card.Text>
                 About {props.group.group}.
               </Card.Text>
               <LinkContainer to="/about" className="stretched-link">
-                <Button variant="primary"><b>What we do...</b></Button>
+                <Button variant="primary"><strong>What we do...</strong></Button>
               </LinkContainer>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src={battle} />
+            <Card.Img variant="top" src={battle} alt="A battle for a medieval castle" />
             <Card.Body>
               <Card.Title>Events</Card.Title>
               <Card.Text>
                 Events taking place in our group.
               </Card.Text>
               <LinkContainer to="/events" className="stretched-link">
-                <Button variant="primary"><b>See our events...</b></Button>
+                <Button variant="primary"><strong>See our events...</strong></Button>
               </LinkContainer>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src={bridge} />
+            <Card.Img variant="top" src={bridge} alt="Banners hanging from a castle bridge" />
             <Card.Body>
             <Card.Title>Contacts</Card.Title>
               <Card.Text>
                 Get in touch.
               </Card.Text>
               <LinkContainer to="/contact" className="stretched-link">
-                <Button variant="primary"><b>Who we are...</b></Button>
+                <Button variant="primary"><strong>Who we are...</strong></Button>
               </LinkContainer>
             </Card.Body>
           </Card>
