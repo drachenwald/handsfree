@@ -65,61 +65,69 @@ const Contact = (props) => {
     },
   ]
 
+  const officers = roles.filter( role => {
+
+    return props.officers.find( obj => {
+      return role.slug === obj.office
+    })
+
+  }).map( role => {
+    const officer = props.officers.find( o => o.office === role.slug)
+
+    return (
+
+      <div key={officer.slug}>
+        <h3>{ role.title }</h3>
+
+        <p>
+          <strong>{ officer.scaname }</strong>{' '}
+
+          { officer.mundanename
+            ?
+              <>({officer.mundanename})</>
+            :
+              null
+          }{' '}
+
+          { officer.pronouns
+            ?
+              <span className='text-muted'>({officer.pronouns})</span>
+            :
+              null
+          }{' '}<br />
+
+          { officer.email
+            ?
+              <>
+                <strong>Contact:</strong>{' '}
+                <a href={'mailto:'+officer.email}>{ officer.email }</a>
+              </>
+            :
+              null    
+          }
+        </p>
+
+        { role.desc
+          ?
+            <p>{role.desc}</p>
+          :
+            null
+        }
+
+        <hr />
+      </div>
+
+    )
+  })
+
   return (
     <Layout title="Contacts" {...props}>
       {
-        roles.map( role => {
-          const officer = props.officers.find( obj => {
-            return role.slug === obj.office
-          })
-
-          if ( officer ) {
-            return (
-              <div key={officer.office}>
-                <h3>{ role.title }</h3>
-
-                <p>
-                  <strong>{ officer.scaname }</strong>{' '}
-
-                  { officer.mundanename
-                    ?
-                      <>({officer.mundanename})</>
-                    :
-                      null
-                  }{' '}
-
-                  { officer.pronouns
-                    ?
-                      <span className='text-muted'>({officer.pronouns})</span>
-                    :
-                      null
-                  }{' '}<br />
-
-                  { officer.email
-                    ?
-                      <>
-                        <strong>Contact:</strong>{' '}
-                        <a href={'mailto:'+officer.email}>{ officer.email }</a>
-                      </>
-                    :
-                      null    
-                  }
-                </p>
-
-                { role.desc
-                  ?
-                    <p>{role.desc}</p>
-                  :
-                    null
-                }
-
-                <hr />
-              </div>
-            )
-          } else {
-            return null
-          }
-        })
+        officers.length > 0
+        ?
+          <>{officers}</>
+        :
+          <>No officers are available to display at this time.</>
       }
     </Layout>
   )
