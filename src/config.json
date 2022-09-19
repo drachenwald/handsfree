@@ -11,8 +11,8 @@
     "handsfree.pages.dev": "Klakavirki"
   },
 
-  "officerurl": "https://scripts.drachenwald.sca.org/json/regnum-officers-box.json",
-  "groupurl": "https://scripts.drachenwald.sca.org/json/regnum-groups.json",
-  "eventsurl": "https://scripts.drachenwald.sca.org/json/calendar.json"
+  "officerurl": "https://dis.drachenwald.sca.org/data/regnum-officers-box.json",
+  "groupurl": "https://dis.drachenwald.sca.org/data/regnum-groups.json",
+  "eventsurl": "https://dis.drachenwald.sca.org/data/calendar.json"
 
 }
