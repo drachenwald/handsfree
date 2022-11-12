@@ -5,10 +5,12 @@
     "www.glenrathlin.org": "Glen Rathlin",
     "klakavirki.org": "Klakavirki",
     "www.klakavirki.org": "Klakavirki",
+    "pontalarch.insulaedraconis.org": "Pontalarch",
+
     
-    "localhost": "Klakavirki",
-    "127.0.0.1": "Glen Rathlin",
-    "handsfree.pages.dev": "Klakavirki"
+    "localhost": "Pontalarch",
+    "127.0.0.1": "Pontalarch",
+    "handsfree.pages.dev": "Pontalarch"
   },
 
   "officerurl": "https://dis.drachenwald.sca.org/data/regnum-officers-box.json",
