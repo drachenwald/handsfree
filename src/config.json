@@ -8,13 +8,13 @@
     "pontalarch.insulaedraconis.org": "Pontalarch",
 
     
-    "localhost": "Pontalarch",
+    "localhost": "Klakavirki",
     "127.0.0.1": "Pontalarch",
     "handsfree.pages.dev": "Pontalarch"
   },
 
   "officerurl": "https://dis.drachenwald.sca.org/data/regnum-officers-box.json",
-  "groupurl": "https://dis.drachenwald.sca.org/data/regnum-groups.json",
+  "groupurl": "https://dis.drachenwald.sca.org/data/branches.json",
   "eventsurl": "https://dis.drachenwald.sca.org/data/calendar.json"
 
 }

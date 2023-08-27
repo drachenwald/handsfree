@@ -1,6 +1,9 @@
 import { Button, Container, CardGroup, Card } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap';
 
+import Icon from '@mdi/react';
+import { mdiFacebook } from '@mdi/js';
+
 import Layout from './Layout'
 
 import battle from '../images/battle.jpg'
@@ -8,6 +11,7 @@ import bridge from '../images/bridge.jpg'
 import helmet from '../images/helmet.jpg'
 
 const Home = (props) => {
+  console.log(props.group)
   return (
     <Layout title={props.group.group}
             subtitle={'Medieval recreation in ' + props.group.region}
@@ -64,6 +68,16 @@ const Home = (props) => {
           </Card>
         </CardGroup>
 
+        { props.group['facebook-page']
+          ?
+            <div className='text-center mt-4'>
+              <Button variant="primary" href={props.group['facebook-page']}>
+                <Icon size='1.3rem' path={mdiFacebook} /> <strong>Visit us on Facebook</strong>
+              </Button>
+            </div>
+          :
+            null
+        }
 
       </Container>
 

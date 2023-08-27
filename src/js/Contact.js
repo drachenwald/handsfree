@@ -1,3 +1,7 @@
+import { Button } from 'react-bootstrap'
+import Icon from '@mdi/react';
+import { mdiFacebook } from '@mdi/js';
+
 import Layout from './Layout'
 
 const Contact = (props) => {
@@ -128,6 +132,17 @@ const Contact = (props) => {
           <>{officers}</>
         :
           <>No officers are available to display at this time.</>
+      }
+
+      { props.group['facebook-page']
+        ?
+          <div className='text-center mt-4'>
+            <Button variant="primary" href={props.group['facebook-page']}>
+              <Icon size='1.3rem' path={mdiFacebook} /> <strong>Visit us on Facebook</strong>
+            </Button>
+          </div>
+        :
+          null
       }
     </Layout>
   )

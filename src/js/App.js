@@ -31,7 +31,7 @@ function App() {
     fetch(config.groupurl)
       .then(response => response.json())
       .then(data => {
-        setGrouplist(data)
+        setGrouplist(data.data)
       })
     // eslint-disable-next-line
   }, []);
