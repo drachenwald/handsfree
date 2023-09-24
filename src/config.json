@@ -6,10 +6,13 @@
     "klakavirki.org": "Klakavirki",
     "www.klakavirki.org": "Klakavirki",
     "pontalarch.insulaedraconis.org": "Pontalarch",
+    "www.westdragonshire.org": "West Dragonshire",
+    "www.thamesreach.org": "Thamesreach",
+    "www.mynydd-gwyn.org.uk": "Mynydd Gwyn",
 
     
-    "localhost": "Klakavirki",
-    "127.0.0.1": "Pontalarch",
+    "localhost": "Mynydd Gwyn",
+    "127.0.0.1": "Thamesreach",
     "handsfree.pages.dev": "Pontalarch"
   },
 
