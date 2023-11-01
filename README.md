@@ -32,7 +32,7 @@ To add a group (shire/canton/etc) to this website, the step are:
    lower case, ASCII characters only, and with spaces replaced by `-`
    dashes. Paste the below, substituting appropriate colours for the
    website (e.g. based on the group's device.)
-   ```
+   ```scss
    $theme-colors: (
      "primary": #333333,       // make this a dark colour
      "secondary": #ffffff,     // make this a light colour
