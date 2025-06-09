@@ -1,19 +1,19 @@
 {
 
   "domains": {
-    "glenrathlin.org": "Glen Rathlin",
-    "www.glenrathlin.org": "Glen Rathlin",
-    "klakavirki.org": "Klakavirki",
-    "www.klakavirki.org": "Klakavirki",
-    "pontalarch.insulaedraconis.org": "Pontalarch",
-    "www.westdragonshire.org": "West Dragonshire",
-    "www.thamesreach.org": "Thamesreach",
-    "www.mynydd-gwyn.org.uk": "Mynydd Gwyn",
+    "glenrathlin.org": "Insulae Draconis-Glen Rathlin",
+    "www.glenrathlin.org": "Insulae Draconis-Glen Rathlin",
+    "klakavirki.org": "Insulae Draconis-Klakavirki",
+    "www.klakavirki.org": "Insulae Draconis-Klakavirki",
+    "pontalarch.insulaedraconis.org": "Insulae Draconis-Pontalarch",
+    "www.westdragonshire.org": "Insulae Draconis-West Dragonshire",
+    "www.thamesreach.org": "Insulae Draconis-Thamesreach",
+    "www.mynydd-gwyn.org.uk": "Insulae Draconis-Mynydd Gwyn",
 
     
-    "localhost": "Mynydd Gwyn",
-    "127.0.0.1": "Thamesreach",
-    "handsfree.pages.dev": "Pontalarch"
+    "localhost": "Insulae Draconis-Mynydd Gwyn",
+    "127.0.0.1": "Insulae Draconis-Thamesreach",
+    "handsfree.pages.dev": "Insulae Draconis-Pont Alarch"
   },
 
   "officerurl": "https://dis.drachenwald.sca.org/data/regnum-officers-box.json",

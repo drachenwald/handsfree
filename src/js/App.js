@@ -65,14 +65,26 @@ function App() {
 
 
   const groupdetails = grouplist.find( obj => {
-    return obj.group === config.domains[window.location.hostname]
+    return obj.id === config.domains[window.location.hostname]
   })
+
+  console.log("before if")
+
+  console.log("officerlist", officerlist)
+
+  console.log("grouplist", grouplist)
+
+  console.log("groupdetails", groupdetails)
+
+  console.log("grouplist", grouplist)
 
   if ( officerlist && grouplist && groupdetails ) {
 
+    console.log("in if")
+
     const group = {
       ...groupdetails,
-      'slug': slugify(groupdetails.group),
+      'slug': slugify(groupdetails.id),
     }
 
     const officers = officerlist.filter( obj => {
