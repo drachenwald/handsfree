@@ -63,32 +63,21 @@ function App() {
       .replace(/-+$/, '') // Trim - from end of text
   }
 
-
   const groupdetails = grouplist.find( obj => {
     return obj.id === config.domains[window.location.hostname]
   })
 
-  console.log("before if")
-
-  console.log("officerlist", officerlist)
-
-  console.log("grouplist", grouplist)
-
-  console.log("groupdetails", groupdetails)
-
-  console.log("grouplist", grouplist)
-
   if ( officerlist && grouplist && groupdetails ) {
-
-    console.log("in if")
 
     const group = {
       ...groupdetails,
       'slug': slugify(groupdetails.id),
     }
 
+    const groupslug = group.id.toLowerCase().replace(/insulae draconis-/,'')
+
     const officers = officerlist.filter( obj => {
-      return obj.group.toLowerCase().endsWith(group.group.toLowerCase())
+      return obj.group.toLowerCase().endsWith(groupslug)
     })
 
     return (

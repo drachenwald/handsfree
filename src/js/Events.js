@@ -6,8 +6,10 @@ import SectionWithHeader from './SectionWithHeader'
 
 const Events = (props) => {
 
+  const groupslug = props.group.id.toLowerCase().replace(/insulae draconis-/,'')
+
   const groupevents = props.eventslist.filter( obj => (
-    obj['host-branch'].toLowerCase().endsWith(props.group.group.toLowerCase())
+    obj['host-branch'].toLowerCase().endsWith(groupslug)
   ))
 
   if ( props.eventslist && groupevents.length === 0 ) {
@@ -32,7 +34,7 @@ const Events = (props) => {
       <ListGroup>
         {
           props.eventslist.filter( obj => (
-            obj['host-branch'].toLowerCase().endsWith(props.group.group.toLowerCase())
+            obj['host-branch'].toLowerCase().endsWith(groupslug)
           )).map( obj => (
             <LinkContainer to={"/events/" + obj.slug} action key={obj.slug}>
               <ListGroup.Item>
